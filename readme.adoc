@@ -22,7 +22,7 @@ System.out.println(versionInfo); // Output
 
 === Helper Functions
 
-Set the directory
+Set the run directory:
 
 ```
 perl.setDirectory("/tmp");
