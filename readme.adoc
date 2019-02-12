@@ -2,7 +2,7 @@
 
 == A Perl runner for Java
 
-Perl Builder is a wrapper for executing perl
+Perl Builder is a wrapper for executing Perl command using a Java API.
 
 === Usage
 
