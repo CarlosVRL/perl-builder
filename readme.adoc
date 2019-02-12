@@ -1,0 +1,35 @@
+= Perl Builder
+
+== A Perl runner for Java
+
+Perl Builder is a wrapper for executing perl
+
+=== Usage
+
+Instantiate a new `PerlBuilder`, e.g. as a singleton:
+
+```
+PerlBuilder perl = new PerlBuilder();
+```
+
+Execute a valid Perl call, e.g. a version check:
+
+```
+perl.executeCommand("-v");
+String versionInfo = perl.getOutput();
+System.out.println(versionInfo); // Output
+```
+
+=== Helper Functions
+
+Set the directory
+
+```
+perl.setDirectory("/tmp");
+```
+
+Set an environment variable:
+
+```
+perl.setEnvironmentVariable("VAR", "value");
+```
