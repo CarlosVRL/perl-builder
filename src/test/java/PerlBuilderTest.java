@@ -20,10 +20,10 @@ public class PerlBuilderTest
         String PERL_VERSION_FLAG = "-v";
         String EXPECTED_PERL_VERSION_SNIPPET = "v"; // e.g., v5.8.8
 
-        PerlBuilder perlBuilder = new PerlBuilder();
-        perlBuilder.executeCommand(PERL_VERSION_FLAG);
+        PerlBuilder perl = new PerlBuilder();
+        perl.executeCommand(PERL_VERSION_FLAG);
 
-        String versionInfo = perlBuilder.getOutput();
+        String versionInfo = perl.getOutput();
         Assert.assertThat(
                 versionInfo,
                 StringContains.containsString(EXPECTED_PERL_VERSION_SNIPPET)
